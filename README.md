@@ -1,25 +1,35 @@
-# AngularJS wrapper for SweetAlert
-
- An Angularjs module with full feature of sweetalert libarary.
+# An Angularjs module with full feature of sweetalert libarary.
 
 It's a directive and a provider to use sweetalert in js code and in html.
 
-these mudole use:
+**these mudole use:**
+
 SweetAlert AngularJS wrapper that is [https://github.com/oitozero/ngSweetAlert](here) develop by: [https://github.com/oitozero](oitozero)
-and ng-sweet-alert an angularjs directive that is [https://github.com/tushariscoolster/ng-sweet-alert](here) develop by: [https://github.com/tushariscoolster](tushariscoolster)
+
+
+and
+
+ng-sweet-alert an angularjs directive that is [https://github.com/tushariscoolster/ng-sweet-alert](here) develop by: [https://github.com/tushariscoolster](tushariscoolster)
+
+
 tnx for all.
 
 if you need just a directive to use in html or need just fire sweetalret from your js code you can use one of tushariscoolster sn-sweet-alert directive or oitozero ngSweetAlert wrapper 
-**but when need both of them (like me) use ngSweetAlertFull.
+**but when need both of them (like me) use ngSweetAlertFull**.
 
 Sweet Alert is a beautiful replacement for Javascript's "Alert". 
 
 ## Demo
-[https://github.com/Mehrdad-Dadkhah/ngSweetAlert/demo](http://oitozero.github.io/ngSweetAlert/)
+[https://github.com/Mehrdad-Dadkhah/ngSweetAlert/demo](DEMO)
+
 or:
+
 [http://oitozero.github.io/ngSweetAlert/](ngSweetAlert DEMO)
+
 and
+
 [http://tushariscoolster.github.io/ng-sweet-alert/](ng-sweet-alert DEMO)
+
 
 ## Dependencies
 - required:  
@@ -73,7 +83,8 @@ or use in html:
 
 ## Documentation
 
-you can see [https://github.com/Mehrdad-Dadkhah/ngSweetAlertFull/demo/index.html](demo file)
+you can see [https://github.com/Mehrdad-Dadkhah/ngSweetAlertFull/demo/index.html](**demo file**)
+
 or
 
 - in js doc: [http://oitozero.github.io/ngSweetAlert/](http://oitozero.github.io/ngSweetAlert/)
