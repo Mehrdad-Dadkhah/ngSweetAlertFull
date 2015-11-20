@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo of ngSweetAlertFull</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/sweet-alert.css">
+
+	<script src="../lib/jquery.min.js" type="text/javascript"></script>
+	<script src="../lib/SweetAlert.js" type="text/javascript"></script>
+	<script src="../lib/angular.min.js" type="text/javascript"></script>
+	<script src="../src/ngSweetAlertFull.js" type="text/javascript"></script>
+	<script src="./app.js" type="text/javascript"></script>
+</head>
+<body ng-app="testApp">
+	<div class="container" ng-controller="MainCtrl">
+		<div>
+		    <div class="container">
+		        <div class="page-header">
+		            <h1>ngSweetAlertFull</h1>
+		        </div>
+		        <p class="lead"></p>
+		        <p>
+		        	An Angularjs module with full feature of sweetalert libarary.
+		        </p>
+		        <p>
+		        	It's a directive and a provider to use sweetalert in js code and in html.
+		        </p>
+		        <p>
+		        	these mudole use:
+		        	<br />
+		        	SweetAlert AngularJS wrapper that is <a href="https://github.com/oitozero/ngSweetAlert" target="_blank">here</a> develop by: <a href="https://github.com/oitozero" target="_blank">oitozero</a>
+		        	<br />
+		        	and ng-sweet-alert an angularjs directive that is <a href="https://github.com/tushariscoolster/ng-sweet-alert" target="_blank">here</a> develop by: <a href="https://github.com/tushariscoolster" target="_blank">tushariscoolster</a>
+		        	<br />
+		        	tnx for all.
+		        </p>
+		        <p>
+		        	if you need just a directive to use in html or need just fire sweetalret from your js code
+		        	you can use one of tushariscoolster sn-sweet-alert directive or oitozero ngSweetAlert wrapper
+		        	<strong>
+		        		but when need both of them (like me) use ngSweetAlertFull.
+		        	</strong>
+		        </p>
+		        <p>
+		        	Sweet Alert is a beautiful replacement for Javascript's "Alert".
+	        	</p>
+		    </div>
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-md-2">
+		                <h3>Examples</h3>
+		                <p>
+		                	(
+		                	<a href="http://oitozero.github.io/ngSweetAlert/" target="_blank">ngSweetAlert Demo</a>
+		                	)
+		                </p>
+		            </div>
+		        </div>
+		        <hr>
+		        <div class="row">
+		            <div class="col-md-4">
+		                A basic message
+		            </div>
+		            <div class="col-md-2">
+		                <a ng-click="demo1();" class="btn btn-primary" href="">Try me!</a>
+		            </div>
+		            <div class="col-md-6">
+		                <pre>SweetAlert.swal("Here's a message");</pre>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-4">
+		                A title with a text under
+		            </div>
+		            <div class="col-md-2">
+		                <a ng-click="demo2();" class="btn btn-primary" href="">Try me!</a>
+		            </div>
+		            <div class="col-md-6">
+		                <pre>SweetAlert.swal("Here's a message!", "It's pretty, isn't it?");</pre>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-4">
+		                A success message!
+		            </div>
+		            <div class="col-md-2">
+		                <a ng-click="demo3();" class="btn btn-primary" href="">Try me!</a>
+		            </div>
+		            <div class="col-md-6">
+		                <pre>SweetAlert.swal("Good job!", "You clicked the button!", "success");</pre>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-4">
+		                A warning message, with a function attached to the "Confirm"-button
+		            </div>
+		            <div class="col-md-2">
+		                <a ng-click="demo4();" class="btn btn-primary" href="">Try me!</a>
+		            </div>
+		            <div class="col-md-6">
+		                <pre>SweetAlert.swal({<br>&nbsp;&nbsp;&nbsp;title: "Are you sure?",<br>&nbsp;&nbsp;&nbsp;text: "Your will not be able to recover this imaginary file!",<br>&nbsp;&nbsp;&nbsp;type: "warning",<br>&nbsp;&nbsp;&nbsp;showCancelButton: true,<br>&nbsp;&nbsp;&nbsp;confirmButtonColor: "#DD6B55",<br>&nbsp;&nbsp;&nbsp;confirmButtonText: "Yes, delete it!",<br>&nbsp;&nbsp;&nbsp;closeOnConfirm: false}, <br>function(){ <br>&nbsp;&nbsp;&nbsp;SweetAlert.swal("Booyah!");<br>});</pre>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-4">
+		                ... and by passing a parameter, you can execute something else for "Cancel".
+		            </div>
+		            <div class="col-md-2">
+		                <a ng-click="demo5();" class="btn btn-primary" href="">Try me!</a>
+		            </div>
+		            <div class="col-md-6">
+		                <pre>SweetAlert.swal({<br>&nbsp;&nbsp;&nbsp;title: "Are you sure?",<br>&nbsp;&nbsp;&nbsp;text: "Your will not be able to recover this imaginary file!",<br>&nbsp;&nbsp;&nbsp;type: "warning",<br>&nbsp;&nbsp;&nbsp;showCancelButton: true,<br>&nbsp;&nbsp;&nbsp;confirmButtonColor: "#DD6B55",confirmButtonText: "Yes, delete it!",<br>&nbsp;&nbsp;&nbsp;cancelButtonText: "No, cancel plx!",<br>&nbsp;&nbsp;&nbsp;closeOnConfirm: false,<br>&nbsp;&nbsp;&nbsp;closeOnCancel: false }, <br>function(isConfirm){ <br>&nbsp;&nbsp;&nbsp;if (isConfirm) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SweetAlert.swal("Deleted!", "Your imaginary file has been deleted.", "success");<br>&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SweetAlert.swal("Cancelled", "Your imaginary file is safe :)", "error");<br>&nbsp;&nbsp;&nbsp;}<br>});</pre>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-4">
+		                A message with a custom icon
+		            </div>
+		            <div class="col-md-2">
+		                <a ng-click="demo6();" class="btn btn-primary" href="">Try me!</a>
+		            </div>
+		            <div class="col-md-6">
+		                <pre>SweetAlert.swal({<br>&nbsp;&nbsp;&nbsp;title: "Sweet!",<br>&nbsp;&nbsp;&nbsp;text: "Here's a custom image.",<br>&nbsp;&nbsp;&nbsp;imageUrl: "http:://oitozero.com/avatar/avatar.jpg" });</pre>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+
+		<section class="row">
+		    <p>
+            	(
+            	<a href="http://tushariscoolster.github.io/ng-sweet-alert/" target="_blank">ng-sweet-alert Demo</a>
+            	)
+            </p>
+
+		    <p>This Directive can be use in angular js application ,without writing a javascript code,All configuration can be done in HTML itself</p>
+		    <strong>Getting Started</strong>
+		    <p>Install it via bower</p>
+
+		    <p>You can try by chaging option on fly and try it!!! Enjoy</p>
+            
+		    <table class="table">
+		        <thead>
+		            <tr>
+		                <th>Option</th>
+		                <th></th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td>sweet-options</td>
+		                <td>
+		                    <textarea ng-model="sweet.option" json-text="" cols="50" rows="2"></textarea>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>sweet-confirm-option</td>
+		                <td>
+		                    <textarea ng-model="sweet.confirm" json-text="" cols="50" rows="2"></textarea>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>sweet-cancel-option</td>
+		                <td>
+		                    <textarea ng-model="sweet.cancel" json-text="" cols="50" rows="2"></textarea>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>sweet-on-confirm</td>
+		                <td>
+		                    checkConfirm()</td>
+		            </tr>
+		            <tr>
+		                <td>sweet-on-cancel</td>
+		                <td>
+		                    checkCancel()</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <pre>
+		    	<code>{{htmlSweetOption}}{{sweet.option}}{{htmlSweetConfirm}}{{sweet.confirm}}{{htmlSweetCancel}}{{sweet.cancel}}{{htmlSweetOnConfirmCancel}}
+				</code>
+			</pre>
+		    <a class="btn" style="background-color:blue" sweet-on-confirm="checkConfirm()" sweet-on-cancel="checkCancel()" name="login-submit" sweet-cancel-option="{{sweet.cancel}}" sweet-confirm-option="{{sweet.confirm}}" sweet-options="{{sweet.option}}" sweet-alert-tag >Try It</a>
+		</section>
+	</div>
+	
+</body>
+</html>

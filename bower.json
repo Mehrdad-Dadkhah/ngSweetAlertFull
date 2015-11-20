@@ -1,0 +1,21 @@
+{
+	"name": "ngSweetAlertFull",
+	"version": "1.0.0",
+	"main": "src/SweetAlert.js",
+	"author": [
+	    "mehrdad@dadkhah.me",
+	    "tusharborole@ymail.com",
+	    "pedro@oitozero.com"
+	  ],
+	"description": "An Angularjs module with full feature of sweetalert libarary",
+	"keywords": [
+		"angular",
+	    "AngularJs",
+	    "sweetalert",
+	    "sweet",
+	    "alert",
+	    "directive",
+	    "factory"
+	],
+	"license": "MIT"
+}

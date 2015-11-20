@@ -1,0 +1,28 @@
+{
+  "name": "ngSweetAlertFull",
+  "version": "1.0.0",
+  "description": "An Angularjs module with full feature of sweetalert libarary",
+  "main": "src/ngSweetAlertFull.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mehrdad-Dadkhah/ngSweetAlertFull.git"
+  },
+  "keywords": [
+    "angular",
+    "AngularJs",
+    "sweetalert",
+    "sweet",
+    "alert",
+    "directive",
+    "factory"
+  ],
+  "author": [
+    "mehrdad@dadkhah.me",
+    "tusharborole@ymail.com",
+    "pedro@oitozero.com"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mehrdad-Dadkhah/ngSweetAlertFull/issues"
+  }
+}
